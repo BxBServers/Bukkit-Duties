@@ -24,7 +24,7 @@ public class Configuration
          output.put( "Actions.onEnable.Order", Arrays.asList( "MemoryImport", "TemporaryGroups", "TemporaryPermissions", "Cleanups", "CommandsByConsole", "Commands", "Messages", "Broadcast" ) );
          output.put( "Actions.TemporaryPermissions", Arrays.asList() );
          output.put( "Actions.TemporaryGroups", Arrays.asList() );
-         output.put( "Actions.onEnable.Cleanups", Arrays.asList( "Vehicle", "Velocity", "Inventory", "Armor", "Exhaustion", "Saturation", "FoodLevel", "Health", "Experience", "RemaingAir", "FallDistance", "FireTicks", "PotionEffects", "TicksLived" ) );
+         output.put( "Actions.onEnable.Cleanups", Arrays.asList( "Vehicle", "Velocity", "Inventory", "Armor", "Exhaustion", "Saturation", "FoodLevel", "Health", "Experience", "RemainingAir", "FallDistance", "FireTicks", "PotionEffects", "TicksLived" ) );
          output.put( "Actions.onEnable.Messages", new ArrayList<String>() );
          output.put( "Actions.onEnable.Commands", new ArrayList<String>() );
          output.put( "Actions.onEnable.CommandsByConsole", Arrays.asList( "gamemode 1 %PLAYER_NAME%" ) );
@@ -315,7 +315,7 @@ public class Configuration
          output.put( "Client.Reminder.ItemDropCancelled", "&4" + "You are not allowed to drop items in dutymode!" );
          output.put( "Client.AlreadyOn", "&4" + "Dutymode is already on." );
          output.put( "Client.AlreadyOff", "&4" + "Dutymode is already off." );
-         output.put( "Client.ErrorOccured", "&4" + "An error occured while enabling dutymode." );
+         output.put( "Client.ErrorOccurred", "&4" + "An error occurred while enabling dutymode." );
          output.put( "Client.List", "&a" + "Staff on duty: " + "&f" );
          output.put( "Client.ListAll", "&a" + "Players on duty: " + "&f" );
          output.put( "Client.NoStaffOnDuty", "&c" + "There is currently no staff on duty." );
@@ -323,7 +323,7 @@ public class Configuration
          output.put( "Client.BroadcastsShown", "&e" + "Now broadcasting status updates!" );
          output.put( "Client.BroadcastsHidden", "&9" + "No longer broadcasting status updates!." );
          output.put( "Client.BroadcastsShownForPlayer", "&e" + "The requested player is now broadcasting status updates." );
-         output.put( "Client.BroadcastsHiddenForPlayer", "&9" + "The requsted player is no longer broadcasting status updates." );
+         output.put( "Client.BroadcastsHiddenForPlayer", "&9" + "The requested player is no longer broadcasting status updates." );
          output.put( "Client.BroadcastsAlreadyShown", "&4" + "You are already broadcasting status updates." );
          output.put( "Client.BroadcastsAlreadyHidden", "&4" + "You are already not broadcasting status updates." );
          output.put( "Client.BroadcastsAlreadyShownForPlayer", "&4" + "The requested player is already broadcasting status updates." );

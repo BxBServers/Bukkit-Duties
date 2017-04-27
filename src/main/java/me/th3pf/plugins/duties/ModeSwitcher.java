@@ -92,7 +92,7 @@ public class ModeSwitcher
             TagAPI.refreshPlayer( player );
 
          //Returns that duty mode activation failed
-         if( fail == true )
+         if( fail )
          {
             return false;
          }
@@ -158,7 +158,7 @@ public class ModeSwitcher
             TagAPI.refreshPlayer( player );
 
          //Returns that duty mode inactivation failed
-         if( fail == true )
+         if( fail )
          {
             return false;
          }

@@ -39,13 +39,13 @@ public class DutymodeCommandExecutor implements CommandExecutor
             }
             else
             {
-               Duties.GetInstance().LogMessage( "This command is only avaible for in-game player." );
+               Duties.GetInstance().LogMessage( "This command is only available for in-game player." );
                return true;
             }
          }
          catch( Exception ex )
          {
-            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occured while enabling duty mode." );
+            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occurred while enabling duty mode." );
             return true;
          }
       }
@@ -110,13 +110,13 @@ public class DutymodeCommandExecutor implements CommandExecutor
             }
             else
             {
-               Duties.GetInstance().LogMessage( "This command is only avaible for in-game player." );
+               Duties.GetInstance().LogMessage( "This command is only available for in-game player." );
                return true;
             }
          }
          catch( Exception ex )
          {
-            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occured while enabling duty mode." );
+            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occurred while enabling duty mode." );
             return true;
          }
       }
@@ -190,7 +190,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
          }
          catch( Exception ex )
          {
-            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occured while enabling duty mode." );
+            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occurred while enabling duty mode." );
             return true;
          }
       }
@@ -259,13 +259,13 @@ public class DutymodeCommandExecutor implements CommandExecutor
             }
             else
             {
-               Duties.GetInstance().LogMessage( "This command is only avaible for in-game player." );
+               Duties.GetInstance().LogMessage( "This command is only available for in-game player." );
                return true;
             }
          }
          catch( Exception ex )
          {
-            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occured while disabling duty mode." );
+            sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + "An error occurred while disabling duty mode." );
             return true;
          }
       }
@@ -406,7 +406,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
          }
          else
          {
-            Duties.GetInstance().LogMessage( "This command is only avaible for in-game player." );
+            Duties.GetInstance().LogMessage( "This command is only available for in-game player." );
             return true;
          }
 
@@ -474,7 +474,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
          }
          else
          {
-            Duties.GetInstance().LogMessage( "This command is only avaible for in-game player." );
+            Duties.GetInstance().LogMessage( "This command is only available for in-game player." );
             return true;
          }
 
@@ -649,7 +649,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
       }
       else if( update == updates.Exception )
       {
-         sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + Duties.Messages.GetString( "Client.ErrorOccured" ).replaceAll( "$", "" ).replaceAll( "&", "" ) );
+         sender.sendMessage( Duties.Messages.GetString( "Client.Tag" ) + Duties.Messages.GetString( "Client.ErrorOccurred" ).replaceAll( "$", "" ).replaceAll( "&", "" ) );
       }
    }
 

@@ -9,11 +9,11 @@ import java.util.UUID;
 
 public class API
 {
-   private Plugin registredPlugin = null;
+   private Plugin registeredPlugin = null;
 
    public void RegisterAddon( Plugin plugin, String name, boolean hidden )
    {
-      //if(!Duties.Addons.containsKey(registredPlugin))return;
+      //if(!Duties.Addons.containsKey(registeredPlugin))return;
 
       if( Duties.Addons.containsKey( plugin ) ) return;
 
@@ -26,7 +26,7 @@ public class API
       {
          Duties.Addons.put( plugin, name );
 
-         registredPlugin = plugin;
+         registeredPlugin = plugin;
          if( !hidden )
          {
             Duties.GetInstance().LogMessage( "Registered addon: " + name );
@@ -43,7 +43,7 @@ public class API
 
    public void UnregisterAddon( Plugin plugin, String name, boolean hidden )
    {
-      if( !Duties.Addons.containsKey( registredPlugin ) ) return;
+      if( !Duties.Addons.containsKey( registeredPlugin ) ) return;
 
       if( plugin == null || name == null )
       {
@@ -54,7 +54,7 @@ public class API
       {
          Duties.Addons.remove( plugin );
 
-         registredPlugin = null;
+         registeredPlugin = null;
          if( !hidden )
          {
             Duties.GetInstance().LogMessage( "Unregistered addon: " + name );
@@ -71,14 +71,14 @@ public class API
 
    public void EnableDutyModeForPlayer( Player player )
    {
-      if( !Duties.Addons.containsKey( registredPlugin ) ) return;
+      if( !Duties.Addons.containsKey( registeredPlugin ) ) return;
 
       ModeSwitcher.EnableDutyMode( player );
    }
 
    public void DisableDutyModeForPlayer( Player player )
    {
-      if( !Duties.Addons.containsKey( registredPlugin ) ) return;
+      if( !Duties.Addons.containsKey( registeredPlugin ) ) return;
 
       ModeSwitcher.DisableDutyMode( player );
    }
@@ -86,7 +86,7 @@ public class API
    @Deprecated
    public boolean IsPlayerInDutyMode( String player )
    {
-      if( !Duties.Addons.containsKey( registredPlugin ) ) return false;
+      if( !Duties.Addons.containsKey( registeredPlugin ) ) return false;
 
       UUID uuid = Bukkit.getPlayer( player ).getUniqueId();
 
@@ -95,7 +95,7 @@ public class API
 
    public boolean IsPlayerInDutyMode( UUID player )
    {
-      if( !Duties.Addons.containsKey( registredPlugin ) )
+      if( !Duties.Addons.containsKey( registeredPlugin ) )
          return false;
 
       return Duties.Memories.keySet().contains( player );
@@ -103,7 +103,7 @@ public class API
 
    public boolean HasPlayerCompleteDutyRights( Player player )
    {
-      if( !Duties.Addons.containsKey( registredPlugin ) ) return false;
+      if( !Duties.Addons.containsKey( registeredPlugin ) ) return false;
 
       return player.hasPermission( "duties.staff" );
    }

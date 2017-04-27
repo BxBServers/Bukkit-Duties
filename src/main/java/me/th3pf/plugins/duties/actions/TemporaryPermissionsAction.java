@@ -60,7 +60,7 @@ public class TemporaryPermissionsAction implements Action
             catch( Exception exception )
             {
                Duties.GetInstance().LogMessage( "Failed while enabling temporary permissions: Not a valid permission node: '" + node.replaceAll( "%PLAYER_NAME%", player.getName() ) );
-               Duties.GetInstance().LogMessage( "Error occured: " + exception.getMessage() + ". Ignoring it!" );
+               Duties.GetInstance().LogMessage( "Error occurred: " + exception.getMessage() + ". Ignoring it!" );
             }
          }
       }
@@ -120,7 +120,7 @@ public class TemporaryPermissionsAction implements Action
             catch( Exception exception )
             {
                Duties.GetInstance().LogMessage( "Failed while disabling temporary permissions: Not a valid permission node: '" + node.replaceAll( "%PLAYER_NAME%", player.getName() ) );
-               Duties.GetInstance().LogMessage( "Error occured: " + exception.getMessage() + ". Ignoring it!" );
+               Duties.GetInstance().LogMessage( "Error occurred: " + exception.getMessage() + ". Ignoring it!" );
             }
 
             count++;

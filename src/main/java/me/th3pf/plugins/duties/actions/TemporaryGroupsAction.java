@@ -36,7 +36,7 @@ public class TemporaryGroupsAction implements Action
             catch( Exception exception )
             {
                Duties.GetInstance().LogMessage( "Failed while enabling temporary groups: Not a valid group: " + group.replaceAll( "%PLAYER_NAME%", player.getName() ) );
-               Duties.GetInstance().LogMessage( "Error occured: " + exception.getMessage() + ". Ignoring it!" );
+               Duties.GetInstance().LogMessage( "Error occurred: " + exception.getMessage() + ". Ignoring it!" );
 
             }
          }
@@ -77,7 +77,7 @@ public class TemporaryGroupsAction implements Action
             catch( Exception exception )
             {
                Duties.GetInstance().LogMessage( "Failed while disabling temporary groups: Not a valid group: " + group.replaceAll( "%PLAYER_NAME%", player.getName() ) );
-               Duties.GetInstance().LogMessage( "Error occured: " + exception.getMessage() + ". Ignoring it!" );
+               Duties.GetInstance().LogMessage( "Error occurred: " + exception.getMessage() + ". Ignoring it!" );
             }
          }
       }
