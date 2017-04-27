@@ -97,10 +97,7 @@ public class Configuration
          {
             this.config.load( new File( Duties.GetInstance().getDataFolder().getAbsolutePath() + File.separator + "config.yml" ) );
          }
-         catch( Exception e )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public boolean GetBoolean( String key )
@@ -129,10 +126,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public String GetString( String key )
@@ -161,10 +155,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public Integer GetInteger( String key )
@@ -193,10 +184,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public double GetDouble( String key )
@@ -225,10 +213,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public List<String> GetStringList( String key )
@@ -264,10 +249,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public YamlConfiguration GetHandle()
@@ -377,10 +359,7 @@ public class Configuration
          {
             this.config.load( new File( Duties.GetInstance().getDataFolder().getAbsolutePath() + File.separator + "messages.yml" ) );
          }
-         catch( Exception e )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public boolean GetBoolean( String key )
@@ -409,10 +388,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public String GetString( String key )
@@ -444,10 +420,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public List<String> GetStringList( String key )
@@ -476,10 +449,7 @@ public class Configuration
          {
             this.config.set( key, value );
          }
-         catch( Exception exception )
-         {
-            return;
-         }
+         catch( Exception ignored ) { }
       }
 
       public YamlConfiguration GetHandle()
