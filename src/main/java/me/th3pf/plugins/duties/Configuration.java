@@ -12,11 +12,11 @@ public class Configuration
    public class Main
    {
       private YamlConfiguration config;
-      private HashMap<String, Object> configDefaults = new LinkedHashMap<String, Object>();
+      private HashMap<String, Object> configDefaults = new LinkedHashMap<>();
 
       public LinkedHashMap<String, Object> initializeConfigDefaults()
       {
-         LinkedHashMap<String, Object> output = new LinkedHashMap<String, Object>();
+         LinkedHashMap<String, Object> output = new LinkedHashMap<>();
 
          output.put( "Enabled", true );
          output.put( "KeepStateOffline", false );
@@ -239,7 +239,7 @@ public class Configuration
          }
          try
          {
-            List<String> output = new ArrayList<String>();
+            List<String> output = new ArrayList<>();
 
             for( String object : this.config.getStringList( key ) )
             {
@@ -286,11 +286,11 @@ public class Configuration
    public class Messages
    {
       private YamlConfiguration config;
-      private HashMap<String, Object> configDefaults = new LinkedHashMap<String, Object>();
+      private HashMap<String, Object> configDefaults = new LinkedHashMap<>();
 
       public LinkedHashMap<String, Object> initializeConfigDefaults()
       {
-         LinkedHashMap<String, Object> output = new LinkedHashMap<String, Object>();
+         LinkedHashMap<String, Object> output = new LinkedHashMap<>();
 
          output.put( "Client.Tag", "&6" + "[" + "&e&o" + "Duties" + "&6" + "]" + "&f" + " " );
 

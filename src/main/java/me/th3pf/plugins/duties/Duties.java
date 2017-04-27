@@ -26,10 +26,10 @@ public class Duties extends JavaPlugin
    public static Configuration.Main Config;
    public static Configuration.Messages Messages;
    public static HashMap<UUID, Memory> Memories = new HashMap<>();
-   public static List<Player> Hidden = new ArrayList<Player>();
-   public static HashMap<String, Long> LastChestReminderTime = new HashMap<String, Long>();
-   public static HashMap<String, Long> LastDropReminderTime = new HashMap<String, Long>();
-   public static HashMap<Plugin, String> Addons = new HashMap<Plugin, String>();
+   public static List<Player> Hidden = new ArrayList<>();
+   public static HashMap<String, Long> LastChestReminderTime = new HashMap<>();
+   public static HashMap<String, Long> LastDropReminderTime = new HashMap<>();
+   public static HashMap<Plugin, String> Addons = new HashMap<>();
    public static VaultAdapter VaultAdapter;
    public static boolean latestEventCancelled = false;
 

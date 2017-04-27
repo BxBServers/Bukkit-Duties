@@ -16,7 +16,7 @@ public class TemporaryPermissionsAction implements Action
 
       try
       {
-         Duties.Memories.get( player.getUniqueId() ).TemporaryPermissions = new ArrayList<PermissionAttachment>();
+         Duties.Memories.get( player.getUniqueId() ).TemporaryPermissions = new ArrayList<>();
 
          for( String node : Duties.Config.GetStringList( "Actions.TemporaryPermissions" ) )
          {
