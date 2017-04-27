@@ -64,16 +64,13 @@ public class DutymodeCommandExecutor implements CommandExecutor
 
                try
                {
-                  if( Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
-                  {
-                     //Player is online
-                  }
-                  else
+                  if( !Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
                   {
                      //Player is offline
                      TellSender( sender, updates.PlayerIsNotOnline, false );
                      return true;
                   }
+                  //Player is online
                }
                catch( Exception exception )
                {
@@ -135,11 +132,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
 
                try
                {
-                  if( Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
-                  {
-                     //Player is online
-                  }
-                  else
+                  if( !Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
                   {
                      //Player is offline
                      TellSender( sender, updates.PlayerIsNotOnline, false );
@@ -209,11 +202,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
 
                try
                {
-                  if( Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
-                  {
-                     //Player is online
-                  }
-                  else
+                  if( !Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
                   {
                      //Player is offline
                      TellSender( sender, updates.PlayerIsNotOnline, false );
@@ -358,11 +347,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
 
             try
             {
-               if( Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
-               {
-                  //Player is online
-               }
-               else
+               if( !Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
                {
                   //Player is offline
                   TellSender( sender, updates.PlayerIsNotOnline, false );
@@ -426,11 +411,7 @@ public class DutymodeCommandExecutor implements CommandExecutor
 
             try
             {
-               if( Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
-               {
-                  //Player is online
-               }
-               else
+               if( !Duties.GetInstance().getServer().getPlayer( args[1] ).isOnline() )
                {
                   //Player is offline
                   TellSender( sender, updates.PlayerIsNotOnline, false );

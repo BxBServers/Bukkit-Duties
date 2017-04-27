@@ -27,11 +27,6 @@ public class TemporaryGroupsAction implements Action
                }
                else if( !Duties.VaultAdapter.permission.playerInGroup( (String) null, player.getName(), group.replaceAll( "%PLAYER_NAME%", player.getName() ) ) )
                   Duties.VaultAdapter.permission.playerAddGroup( (String) null, player.getName(), group.replaceAll( "%PLAYER_NAME%", player.getName() ) );
-               else
-               {
-                  //Already in group
-
-               }
             }
             catch( Exception exception )
             {
@@ -68,11 +63,6 @@ public class TemporaryGroupsAction implements Action
                }
                else if( Duties.VaultAdapter.permission.playerInGroup( (String) null, player.getName(), group.replaceAll( "%PLAYER_NAME%", player.getName() ) ) )
                   Duties.VaultAdapter.permission.playerRemoveGroup( (String) null, player.getName(), group.replaceAll( "%PLAYER_NAME%", player.getName() ) );
-               else
-               {
-                  //Already not in group
-
-               }
             }
             catch( Exception exception )
             {
